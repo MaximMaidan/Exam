@@ -60,8 +60,8 @@ public class ConsoleInterface implements Serializable {
                     String name = sc.nextLine();
                     System.out.println("Введите отчество");
                     String patronymic = sc.nextLine();
-                    System.out.println("Введите дату рождения");
-                    LocalDate birthDate = LocalDate.ofEpochDay(sc.nextInt());
+                    System.out.println("Введите дату рождения: год, месяц, день");
+                    LocalDate birthDate = LocalDate.of(sc.nextInt(), sc.nextInt(), sc.nextInt());
                     System.out.println("Введите пол");
                     sc.nextLine();
                     String gender = sc.nextLine();
@@ -73,8 +73,8 @@ public class ConsoleInterface implements Serializable {
                     String department = sc.nextLine();
                     System.out.println("Введите ФИО руководителя");
                     String chief = sc.nextLine();
-                    System.out.println("Введите дату приема на работу");
-                    LocalDate employmentDate = LocalDate.ofEpochDay(sc.nextInt());
+                    System.out.println("Введите дату приема на работу: год, месяц, день");
+                    LocalDate employmentDate = LocalDate.of(sc.nextInt(), sc.nextInt(), sc.nextInt());
                     System.out.println("Введите заработную плату");
                     sc.nextLine();
                     double salary = sc.nextDouble();
